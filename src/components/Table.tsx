@@ -47,7 +47,7 @@ const gigs = [
 
 export function TableComponent() {
   return (
-    <Table>
+    <Table className="w-full min-w-[700px]">
       <TableCaption className="sr-only">
         A list of your recent gigs.
       </TableCaption>
@@ -78,11 +78,11 @@ export function TableComponent() {
               rowSpan={1}
               className="font-medium text-xs text-[#7B74FF] flex items-center gap-1"
             >
-              <div className="relative">
+              <div className="relative flex w-8 h-8 flex-shrink-0">
                 <img
                   src="https://images.unsplash.com/photo-1572044162444-ad60f128bdea?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGdyYXBoaWMlMjBkZXNpZ258ZW58MHx8MHx8fDA%3D"
                   alt={gig.title}
-                  className="w-8 h-8 rounded-full bg-blend-overlay"
+                  className="w-8 h-8 rounded-full bg-blend-overlay flex-shrink-0"
                 />
                 <div className="w-8 h-8 rounded-full bg-blend-overlay bg-[#7B74FF] bg-opacity-40 absolute inset-0"></div>
               </div>

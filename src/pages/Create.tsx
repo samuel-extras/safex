@@ -14,23 +14,50 @@ import {
 } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
+
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
+import { Link } from "@tanstack/react-router";
 const Create = () => {
   const [quack, setQuack] = useState(0);
   const [quackF, setQuackF] = useState(false);
 
   return (
-    <div className="flex flex-col gap-6 px-10 max-w-5xl">
-      <Button className="w-fit h-fit bg-gradient-to-r from-[#7B74FF] to-[#C8C7D2]  hover:bg-white text-black text-xl rounded-[10px] flex justify-center items-center font-medium px-12 py-4 mx-auto">
+    <div className="flex flex-col gap-6 px-4 lg:px-10 h-full">
+      <Breadcrumb className=" md:hidden">
+        <BreadcrumbList>
+          <BreadcrumbItem>
+            <BreadcrumbLink className="text-white">
+              <Link to="/">Home</Link>
+            </BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbSeparator />
+
+          <BreadcrumbItem>
+            <BreadcrumbPage className="text-[#7B74FF]">
+              Create an Offer
+            </BreadcrumbPage>
+          </BreadcrumbItem>
+        </BreadcrumbList>
+      </Breadcrumb>
+
+      <Button className="w-fit h-fit bg-gradient-to-r from-[#7B74FF] to-[#C8C7D2]  hover:bg-white text-black md:text-xl rounded-[10px] justify-center items-center font-medium px-12 md:py-4 md:mx-auto hidden md:flex">
         Create an Offer{" "}
       </Button>
       <form className="grid w-full grid-cols-4 gap-4">
-        <div className=" col-span-3 w-full  items-center space-y-1.5">
+        <div className="col-span-full lg:col-span-3 w-full  items-center space-y-1.5">
           <Label className="text-white font-medium" htmlFor="offer">
             WHAT ARE YOU OFFERING?
           </Label>
           <Input id="offer" type="text" className="w-full bg-[#D9D9D9]" />
         </div>
-        <div className=" w-full  items-center space-y-1.5">
+        <div className="col-span-full lg:col-span-1 w-full  items-center space-y-1.5">
           <Label className="text-white font-medium" htmlFor="category">
             CATEGORY{" "}
           </Label>
@@ -50,7 +77,7 @@ const Create = () => {
             </SelectContent>
           </Select>{" "}
         </div>
-        <div className=" w-full  items-center space-y-1.5">
+        <div className="col-span-2 lg:col-span-1 w-full  items-center space-y-1.5">
           <Label className="text-white font-medium" htmlFor="category">
             TIMELINE{" "}
           </Label>
@@ -70,7 +97,7 @@ const Create = () => {
             </SelectContent>
           </Select>{" "}
         </div>
-        <div className=" w-full  items-center space-y-1.5">
+        <div className="col-span-2 lg:col-span-1 w-full  items-center space-y-1.5">
           <Label
             className="text-white font-medium invisible"
             htmlFor="category"
@@ -93,7 +120,7 @@ const Create = () => {
             </SelectContent>
           </Select>{" "}
         </div>
-        <div className=" w-full  items-center space-y-1.5">
+        <div className="col-span-2 lg:col-span-1 w-full  items-center space-y-1.5">
           <Label
             className="text-white font-medium invisible"
             htmlFor="category"
@@ -116,7 +143,7 @@ const Create = () => {
             </SelectContent>
           </Select>{" "}
         </div>
-        <div className=" w-full  items-center space-y-1.5 ">
+        <div className="col-span-2 lg:col-span-1 w-full  items-center space-y-1.5">
           <Label
             className="text-white font-medium invisible"
             htmlFor="category"
@@ -145,7 +172,7 @@ const Create = () => {
           </Label>
           <Textarea rows={8} className="bg-[#D9D9D9]" />
         </div>
-        <div className="flex col-span-2 justify-between gap-2 lg:gap-4 mb-6">
+        <div className="flex col-span-full  lg:col-span-2 justify-between gap-2 lg:gap-4 mb-6">
           <Button
             className="bg-transparent border-2 border-[#FFD700] px-5 text-white"
             variant="outline"
@@ -182,7 +209,7 @@ const Create = () => {
             +
           </Button>
         </div>
-        <Button className="w-full col-span-2 bg-gradient-to-r from-[#7B74FF] to-[#C8C7D2]  hover:bg-white text-black rounded-[10px] flex justify-center items-center font-medium  mx-auto">
+        <Button className="w-full col-span-full  lg:col-span-2 bg-gradient-to-r from-[#7B74FF] to-[#C8C7D2]  hover:bg-white text-black rounded-[10px] flex justify-center items-center font-medium  mx-auto">
           Create an Offer{" "}
         </Button>
       </form>

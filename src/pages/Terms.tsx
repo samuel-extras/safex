@@ -1,22 +1,46 @@
 import { Button } from "@/components/ui/button";
+import {
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+  BreadcrumbList,
+  BreadcrumbPage,
+  BreadcrumbSeparator,
+} from "@/components/ui/breadcrumb";
+import { Link } from "@tanstack/react-router";
 
 const Terms = () => {
   return (
-    <div className="flex flex-col  px-10 max-w-5xl text-white">
-      <Button className="w-fit h-fit bg-gradient-to-r from-[#7B74FF] to-[#C8C7D2]  hover:bg-white text-black text-xl rounded-[10px] flex justify-center items-center font-medium px-12 py-4 mx-auto mb-6">
+    <div className="flex flex-col px-4 lg:px-10 w-full text-white">
+      <Breadcrumb className=" md:hidden">
+        <BreadcrumbList>
+          <BreadcrumbItem>
+            <BreadcrumbLink className="text-white">
+              <Link to="/">Home</Link>
+            </BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbSeparator />
+
+          <BreadcrumbItem>
+            <BreadcrumbPage className="text-[#7B74FF]">
+              Terms and Conditions{" "}
+            </BreadcrumbPage>
+          </BreadcrumbItem>
+        </BreadcrumbList>
+      </Breadcrumb>
+      <Button className="w-fit h-fit bg-gradient-to-r from-[#7B74FF] to-[#C8C7D2]  hover:bg-white text-black md:text-xl rounded-[10px] justify-center items-center font-medium px-12 md:py-4 md:mx-auto hidden md:flex">
         Terms and Conditions
       </Button>
-      <div className="max-w-4xl mx-auto p-6 ">
-        <h1 className="text-3xl font-bold mb-4">Welcome to Safe-X!</h1>
+      <div className=" mx-auto mt-10 ">
         <p className="mb-6">
-          By using our services, you agree to the following terms and
-          conditions. Please read them carefully.
+          Welcome to Safe-Escrow! By using our services, you agree to the
+          following terms and conditions. Please read them carefully.
         </p>
 
         <h2 className="text-2xl font-semibold mb-4">1. Introduction</h2>
         <p className="mb-6">
-          Safe-X is a blockchain-based escrow service designed to facilitate
-          secure online transactions. By accessing or using Safe-X, you agree to
+          Safe-X is a blockchain-based escrow service designed to revolutionize
+          secured P2P and OTC online transactions. By using Safe-X, you agree to
           comply with and be bound by these terms and conditions.
         </p>
 
