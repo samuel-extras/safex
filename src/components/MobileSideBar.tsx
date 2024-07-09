@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "@tanstack/react-router";
 import { useWeb3Modal, useWeb3ModalAccount } from "@web3modal/ethers/react";
 import { Menu } from "lucide-react";
+import { ScrollArea } from "./ui/scroll-area";
 const MobileSideBar = () => {
   const { open } = useWeb3Modal();
   const { address, isConnected } = useWeb3ModalAccount();
@@ -15,52 +16,55 @@ const MobileSideBar = () => {
       </SheetTrigger>
       <SheetContent className="bg-[#070087] p-0 py-4 w-72">
         <aside className="  w-full flex-col  flex px-2  h-full">
-          <div className="flex items-center -space-x-2 mb-4">
-            <img src="/logo.png" alt="" className="h-16 w-auto " />
-            <img src="/safe-x.png" alt="" className="h-9 w-auto" />
-          </div>
-          <div className="flex flex-col space-y-4 px-5">
-            <nav className=" flex flex-col space-y-4 mb-4">
-              <Link
-                to="/"
-                className="w-full h-8 bg-gradient-to-r from-[#D9D9D9] to-[#D9D9D9] [&.active]:from-[#7B74FF] [&.active]:to-[#C8C7D2]  hover:bg-white text-black text-xs rounded-[10px] flex justify-center items-center font-medium"
-              >
-                Dashboard
-              </Link>
-
-              <Link
-                to="/create-offer"
-                className="w-full h-8 bg-gradient-to-r from-[#D9D9D9] to-[#D9D9D9] [&.active]:from-[#7B74FF] [&.active]:to-[#C8C7D2]  hover:bg-white text-black text-xs rounded-[10px] flex justify-center items-center font-medium"
-              >
-                Create Offer{" "}
-              </Link>
-
-              <Link
-                to="/accept-offer"
-                className="w-full h-8 bg-gradient-to-r from-[#D9D9D9] to-[#D9D9D9] [&.active]:from-[#7B74FF] [&.active]:to-[#C8C7D2]  hover:bg-white text-black text-xs rounded-[10px] flex justify-center items-center font-medium"
-              >
-                Accept Offer{" "}
-              </Link>
-
-              <Link
-                to="/terms"
-                className="w-full h-8 bg-gradient-to-r from-[#D9D9D9] to-[#D9D9D9] [&.active]:from-[#7B74FF] [&.active]:to-[#C8C7D2]  hover:bg-white text-black text-xs rounded-[10px] flex justify-center items-center font-medium"
-              >
-                Terms
-              </Link>
-            </nav>
-            <div className="bg-[#483EFF] flex flex-col items-center rounded-[40px] px-5 py-3 space-y-2">
-              <img src="/logo.png" alt="" className="h-auto w-full " />
-              <p className="text-white text-xs text-center font-medium ">
-                Safe-X is a blockchain escrow service useful majorly for online
-                transactions as it allows the parties to settle a transaction in
-                a neutral, impartial, stable and transparent manner.
-              </p>
-              <Button className="bg-[#FFB500] h-8 rounded-[20px] text-black hover:text-[#ffb500] hover:bg-black font-medium">
-                GET STARTED
-              </Button>
+          <ScrollArea>
+            <div className="flex items-center  mb-4 ml-4">
+              <img src="/logo.png" alt="" className="h-12 w-auto " />
+              <img src="/safe-x.png" alt="" className="h-8 w-auto" />
             </div>
-          </div>
+            <div className="flex flex-col space-y-4 px-5 pb-6">
+              <nav className=" flex flex-col space-y-4 mb-4">
+                <Link
+                  to="/"
+                  className="w-full h-8 bg-gradient-to-r from-[#D9D9D9] to-[#D9D9D9] [&.active]:from-[#7B74FF] [&.active]:to-[#C8C7D2]  hover:bg-white text-black text-xs rounded-[10px] flex justify-center items-center font-medium"
+                >
+                  Dashboard
+                </Link>
+
+                <Link
+                  to="/create-offer"
+                  className="w-full h-8 bg-gradient-to-r from-[#D9D9D9] to-[#D9D9D9] [&.active]:from-[#7B74FF] [&.active]:to-[#C8C7D2]  hover:bg-white text-black text-xs rounded-[10px] flex justify-center items-center font-medium"
+                >
+                  Create Offer{" "}
+                </Link>
+
+                <Link
+                  to="/accept-offer"
+                  className="w-full h-8 bg-gradient-to-r from-[#D9D9D9] to-[#D9D9D9] [&.active]:from-[#7B74FF] [&.active]:to-[#C8C7D2]  hover:bg-white text-black text-xs rounded-[10px] flex justify-center items-center font-medium"
+                >
+                  Accept Offer{" "}
+                </Link>
+
+                <Link
+                  to="/terms"
+                  className="w-full h-8 bg-gradient-to-r from-[#D9D9D9] to-[#D9D9D9] [&.active]:from-[#7B74FF] [&.active]:to-[#C8C7D2]  hover:bg-white text-black text-xs rounded-[10px] flex justify-center items-center font-medium"
+                >
+                  Terms
+                </Link>
+              </nav>
+              <div className="bg-[#483EFF] flex flex-col items-center rounded-[40px] px-5 py-3 space-y-2">
+                <img src="/logo.png" alt="" className="h-auto w-full " />
+                <p className="text-white text-xs text-center font-medium ">
+                  Safe-X is a blockchain escrow service useful majorly for
+                  online transactions as it allows the parties to settle a
+                  transaction in a neutral, impartial, stable and transparent
+                  manner.
+                </p>
+                <Button className="bg-[#FFB500] h-8 rounded-[20px] text-black hover:text-[#ffb500] hover:bg-black font-medium">
+                  GET STARTED
+                </Button>
+              </div>
+            </div>
+          </ScrollArea>
           <div className="mt-auto flex flex-col items-center px-6">
             {address && isConnected ? (
               <Button
