@@ -3,10 +3,16 @@ import { Button } from "./ui/button";
 const Sidebar = () => {
   return (
     <aside className="fixed inset-y-0 left-0 z-10 hidden w-60 flex-col  md:flex px-2 pb-3 pt-1">
-      <div className="flex items-center -space-x-2 mb-5">
-        <img src="/logo.png" alt="" className="h-16 w-auto " />
-        <img src="/safe-x.png" alt="" className="h-9 w-auto" />
-      </div>
+      <a
+        href="https://www.safe-escrow.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div className="flex items-center -space-x-2 mb-5">
+          <img src="/logo.png" alt="" className="h-16 w-auto " />
+          <img src="/safe-x.png" alt="" className="h-9 w-auto" />
+        </div>
+      </a>
       <div className="flex flex-col space-y-4 px-5">
         <nav className=" flex flex-col space-y-4 mb-5">
           <Link

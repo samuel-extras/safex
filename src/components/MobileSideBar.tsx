@@ -17,10 +17,16 @@ const MobileSideBar = () => {
       <SheetContent className="bg-[#070087] p-0 py-4 w-72">
         <aside className="  w-full flex-col  flex px-2  h-full">
           <ScrollArea>
-            <div className="flex items-center  mb-4 ml-4">
-              <img src="/logo.png" alt="" className="h-12 w-auto " />
-              <img src="/safe-x.png" alt="" className="h-8 w-auto" />
-            </div>
+            <a
+              href="https://www.safe-escrow.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="flex items-center  mb-4 ml-4">
+                <img src="/logo.png" alt="" className="h-12 w-auto " />
+                <img src="/safe-x.png" alt="" className="h-8 w-auto" />
+              </div>
+            </a>
             <div className="flex flex-col space-y-4 px-5 pb-6">
               <nav className=" flex flex-col space-y-4 mb-4">
                 <Link

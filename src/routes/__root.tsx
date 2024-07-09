@@ -13,10 +13,17 @@ export const Route = createRootRoute({
         <div className="flex flex-col sm:gap-4 sm:py-5 md:pl-64 ">
           <div className="flex items-center justify-between md:hidden">
             <MobileSideBar />
-            <div className="flex items-center -space-x-2  mx-auto">
-              <img src="/logo.png" alt="" className="h-16 w-auto " />
-              <img src="/safe-x.png" alt="" className="h-9 w-auto" />
-            </div>
+            <a
+              href="https://www.safe-escrow.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mx-auto"
+            >
+              <div className="flex items-center -space-x-2  mx-auto">
+                <img src="/logo.png" alt="" className="h-16 w-auto " />
+                <img src="/safe-x.png" alt="" className="h-9 w-auto" />
+              </div>
+            </a>
           </div>
           <Outlet />
         </div>
