@@ -3,11 +3,7 @@ import { Button } from "./ui/button";
 const Sidebar = () => {
   return (
     <aside className="fixed inset-y-0 left-0 z-10 hidden w-60 flex-col  md:flex px-2 pb-3 pt-1">
-      <a
-        href="https://www.safe-escrow.com"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <a href="https://safe-excrow.com">
         <div className="flex items-center -space-x-2 mb-5">
           <img src="/logo.png" alt="" className="h-16 w-auto " />
           <img src="/safe-x.png" alt="" className="h-9 w-auto" />

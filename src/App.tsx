@@ -6,7 +6,7 @@ import { routeTree } from "./routeTree.gen";
 import { createWeb3Modal, defaultConfig } from "@web3modal/ethers/react";
 
 // 1. Get projectId
-const projectId = "YOUR_PROJECT_ID";
+const projectId = "c24413b4d27b10f2c07e078173f96bb0";
 
 // 2. Set chains
 const mainnet = {
@@ -19,9 +19,9 @@ const mainnet = {
 
 // 3. Create a metadata object
 const metadata = {
-  name: "My Website",
+  name: "Safe-x",
   description: "My Website description",
-  url: "https://mywebsite.com", // origin must match your domain & subdomain
+  url: "https://safex-rho.vercel.app/", // origin must match your domain & subdomain
   icons: ["https://avatars.mywebsite.com/"],
 };
 
