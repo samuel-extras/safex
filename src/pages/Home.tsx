@@ -1,6 +1,13 @@
-import { MoreVertical, Search, Wallet } from "lucide-react";
+import {
+  BadgeDollarSign,
+  DollarSign,
+  MoreVertical,
+  SaveIcon,
+  Search,
+  Wallet,
+} from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+// import { Badge } from "@/components/ui/badge";
 import { Bar, BarChart, XAxis, YAxis } from "recharts";
 
 import {
@@ -152,9 +159,9 @@ const Home = () => {
               <p className="text-[#7B74FF] font-medium">Total Balance</p>
               <div className="flex items-center justify-between flex-wrap">
                 <p className="text-white font-bold text-lg">$632.000</p>
-                <Badge className="bg-[#7B74FF] bg-opacity-25 text-[#7B74FF] hover:text-white">
+                {/* <Badge className="bg-[#7B74FF] bg-opacity-25 text-[#7B74FF] hover:text-white">
                   +1.29%
-                </Badge>
+                </Badge> */}
               </div>
             </div>
           </CardContent>
@@ -162,18 +169,18 @@ const Home = () => {
         <Card className="bg-[#7B74FF] bg-opacity-15 border-none">
           <CardHeader className=" flex-row justify-between items-center p-5">
             <div className="h-8 w-8 rounded-full bg-[#7B74FF]/30 flex justify-center items-center">
-              <Wallet className="text-[#7B74FF] size-5" />
+              <BadgeDollarSign className="text-[#7B74FF] size-5" />
             </div>
             <MoreVertical className="text-[#7B74FF] size-6" />
           </CardHeader>
           <CardContent className="p-0 px-5 pb-5">
             <div className="text-xs ">
-              <p className="text-[#7B74FF] font-medium">Total Balance</p>
+              <p className="text-[#7B74FF] font-medium">Total Income</p>
               <div className="flex items-center justify-between flex-wrap">
-                <p className="text-white font-bold text-lg">$632.000</p>
-                <Badge className="bg-[#7B74FF] bg-opacity-25 text-[#7B74FF] hover:text-white">
+                <p className="text-white font-bold text-lg">$592.000</p>
+                {/* <Badge className="bg-[#7B74FF] bg-opacity-25 text-[#7B74FF] hover:text-white">
                   +1.29%
-                </Badge>
+                </Badge> */}
               </div>
             </div>
           </CardContent>
@@ -181,18 +188,18 @@ const Home = () => {
         <Card className="bg-[#7B74FF] bg-opacity-15 border-none">
           <CardHeader className=" flex-row justify-between items-center p-5">
             <div className="h-8 w-8 rounded-full bg-[#7B74FF]/30 flex justify-center items-center">
-              <Wallet className="text-[#7B74FF] size-5" />
+              <SaveIcon className="text-[#7B74FF] size-5" />
             </div>
             <MoreVertical className="text-[#7B74FF] size-6" />
           </CardHeader>
           <CardContent className="p-0 px-5 pb-5">
             <div className="text-xs ">
-              <p className="text-[#7B74FF] font-medium">Total Balance</p>
+              <p className="text-[#7B74FF] font-medium">Total Savings</p>
               <div className="flex items-center justify-between flex-wrap">
-                <p className="text-white font-bold text-lg">$632.000</p>
-                <Badge className="bg-[#7B74FF] bg-opacity-25 text-[#7B74FF] hover:text-white">
+                <p className="text-white font-bold text-lg">$354.000</p>
+                {/* <Badge className="bg-[#7B74FF] bg-opacity-25 text-[#7B74FF] hover:text-white">
                   +1.29%
-                </Badge>
+                </Badge> */}
               </div>
             </div>
           </CardContent>
@@ -200,18 +207,18 @@ const Home = () => {
         <Card className="bg-[#7B74FF] bg-opacity-15 border-none">
           <CardHeader className=" flex-row justify-between items-center p-5">
             <div className="h-8 w-8 rounded-full bg-[#7B74FF]/30 flex justify-center items-center">
-              <Wallet className="text-[#7B74FF] size-5" />
+              <DollarSign className="text-[#7B74FF] size-5" />
             </div>
             <MoreVertical className="text-[#7B74FF] size-6" />
           </CardHeader>
           <CardContent className="p-0 px-5 pb-5">
             <div className="text-xs ">
-              <p className="text-[#7B74FF] font-medium">Total Balance</p>
+              <p className="text-[#7B74FF] font-medium">Total Expenses</p>
               <div className="flex items-center justify-between flex-wrap">
-                <p className="text-white font-bold text-lg">$632.000</p>
-                <Badge className="bg-[#7B74FF] bg-opacity-25 text-[#7B74FF] hover:text-white">
+                <p className="text-white font-bold text-lg">$238.000</p>
+                {/* <Badge className="bg-[#7B74FF] bg-opacity-25 text-[#7B74FF] hover:text-white">
                   +1.29%
-                </Badge>
+                </Badge> */}
               </div>
             </div>
           </CardContent>
