@@ -150,11 +150,34 @@ const Accept = () => {
             <SelectContent>
               <SelectGroup>
                 <SelectLabel>category</SelectLabel>
-                <SelectItem value="development">development</SelectItem>
-                <SelectItem value="production">production</SelectItem>
-                <SelectItem value="design">design</SelectItem>
-                <SelectItem value="staging">staging</SelectItem>
-                <SelectItem value="analytics">analytics</SelectItem>
+
+                <SelectItem value="Email marketing">Email marketing</SelectItem>
+                <SelectItem value="Social media marketing">
+                  Social Media marketing
+                </SelectItem>
+                <SelectItem value="Search engine marketing">
+                  Search engine marketing
+                </SelectItem>
+                <SelectItem value="Search engine optimization">
+                  Search Engine optimization
+                </SelectItem>
+                <SelectItem value="Font and Typography">
+                  Font and Typography
+                </SelectItem>
+                <SelectItem value="Website development">
+                  Website development
+                </SelectItem>
+                <SelectItem value="Website platforms">
+                  Website platforms
+                </SelectItem>
+                <SelectItem value="Legal services">Legal services</SelectItem>
+                <SelectItem value="Video art">Video art</SelectItem>
+
+                <SelectItem value="Content writing">Content writing</SelectItem>
+                <SelectItem value="Social marketing videos">
+                  Social marketing videos
+                </SelectItem>
+                <SelectItem value="Custom songs">Custom songs</SelectItem>
               </SelectGroup>
             </SelectContent>
           </Select>{" "}

@@ -13,35 +13,106 @@ import { Button } from "./ui/button";
 
 const gigs = [
   {
-    title: "I Will Create a Stunning 3D Logo for Your Brand",
+    title:
+      "I will do bulk email blast, email marketing and email marketing campaign",
     status: "Approved",
-    category: "Graphics & Design Logo Design",
+    category: "Email marketing",
     isPublished: true,
 
     views: 30,
   },
   {
-    title: "Professional Graphic Design Services for Your Business Needs",
+    title: "I will be your social media manager and content creator",
     status: "Approved",
-    category: "Graphics & Design Logo Design",
+    category: "Social media marketing ",
     isPublished: true,
     views: 65,
   },
   {
-    title: "Unique and Creative 3D Logo Design for Your Company",
+    title:
+      "I will set up and manage highly profitable google ads and PPC campaigns",
     status: "rejected",
-    category: "Graphics & Design Logo Design",
+    category: "Search Engine marketing",
     isPublished: true,
 
     views: 69,
   },
   {
-    title: "Expert Graphic Design and 3D Logo Creation for Your Brand",
+    title:
+      "Our agency will do premium SEO backlinks service package for google top ranking",
     status: "Approved",
-    category: "Graphics & Design Logo Design",
+    category: "Search Engine optimization",
+    isPublished: true,
+
+    views: 33,
+  },
+  {
+    title: "I will create custom hand lettering, calligraphy, typography logo",
+    status: "Approved",
+    category: "Font and Typography ",
+    isPublished: true,
+
+    views: 37,
+  },
+  {
+    title:
+      "I will develop responsive wordpress website design redesign and clone landing page",
+    status: "Approved",
+    category: "Website development ",
     isPublished: true,
 
     views: 101,
+  },
+  {
+    title:
+      "I will build wordpress website design with elementor pro, woocommerce store, wordpress",
+    status: "Approved",
+    category: "Website platforms",
+    isPublished: true,
+
+    views: 92,
+  },
+  {
+    title:
+      "I will be your lawyer for legal contracts, agreements, terms and conditions, nda, eula",
+    status: "Approved",
+    category: "Legal services",
+    isPublished: true,
+
+    views: 77,
+  },
+  {
+    title:
+      "I will create a custom conceptual video art using collage animation",
+    status: "Approved",
+    category: "Video art",
+    isPublished: true,
+
+    views: 67,
+  },
+  {
+    title: "I will create your blog content strategy with SEO keyword advice",
+    status: "Approved",
+    category: "Content writing",
+    isPublished: true,
+
+    views: 54,
+  },
+  {
+    title: "I will create a fun, catchy selfie style ugc video",
+    status: "Approved",
+    category: "Social marketing videos",
+    isPublished: true,
+
+    views: 82,
+  },
+  {
+    title: "I will be your songwriter and write a custom song with you",
+    status: "Approved",
+    category: "Custom songs",
+    isPublished: true,
+
+    views: 63,
   },
 ];
 
